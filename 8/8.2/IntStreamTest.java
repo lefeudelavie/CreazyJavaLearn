@@ -12,8 +12,10 @@ public class IntStreamTest
 		.add(20)
 		.build();
 
-		System.out.println("is 所有元素的最大值:" + is.max().getAsInt());
+		//System.out.println("is 所有元素的最大值:" + is.max().getAsInt());
 		//System.out.println("is 所有元素的最小值:" + is.min().getAsInt());
-		System.out.println("is 所有元素的总和:" + is.sum());
+		//System.out.println("is 所有元素的总和:" + is.sum());
+		//System.out.println("is 所有元素的平均值:" + is.average().getAsDouble());
+
 	}
 }
