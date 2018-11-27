@@ -24,7 +24,7 @@ public class IntStreamTest
 		//newIs.forEach(System.out::println);
 		//System.out.println("is 有任何元素大于20：" 
 		//					+ newIs.anyMatch(ele -> ele > 20));
-		System.out.println("过滤掉所有大于20的元素:" + is.filter(ele -> ele > 20));
+		System.out.println("过滤掉所有大于20的元素:" + is.filter(ele -> ele >= 20).min());
 		//is.forEach(System.out::println);
 	}
 }
