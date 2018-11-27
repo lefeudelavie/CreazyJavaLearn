@@ -10,7 +10,7 @@ public class PredicateTest
 		books.add("C language");
 		books.add("C++ language");
 		books.add("Java 101");
-		//books.removeIf( ele -> (((String)ele).length() > 10));
+		//books.removeIf( ele -> ((\(String)ele).length() > 10));
 		System.out.println(books);
 
 		System.out.println(calAll(books, ele -> ((String)ele).contains("language")));
