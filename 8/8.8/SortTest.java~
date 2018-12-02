@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class SortTest
+{
+	 public static void main(String[] args)
+	 {
+		 ArrayList num = new ArrayList();
+		 num.put(5);
+		 num.put(3);
+		 num.put(7);
+		 num.put(6);
+		 System.out.println(num);
+		 Collections.reverse(num);
+		 System.out.println(num);
+	     Collections.sort(num);
+		 System.out.println(num);
+		 Collections.shuffle(num);
+		 System.out.println(num);
+		 
+	 }
+}
