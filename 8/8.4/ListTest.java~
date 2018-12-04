@@ -27,5 +27,11 @@ public class ListTest
 	System.out.println(books);
 
 	System.out.println(books.indexOf(new String("Design mode 101")));
+
+	books.set(1,"INDEX 111 BOOK");
+	System.out.println(books);
+
+
+	System.out.println(books.subList(1,2));
      }
 }
