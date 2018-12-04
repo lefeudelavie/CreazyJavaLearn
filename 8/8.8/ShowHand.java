@@ -119,7 +119,7 @@ public class ShowHand
     {
          for ( int i = 0; i < PLAY_NUM; i++)
          {
-              // 当我玩家不为空时
+              // 当玩家不为空时
               if (players[i] != null)
               {
                    //输出玩家
