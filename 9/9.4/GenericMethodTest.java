@@ -20,12 +20,19 @@ public class GenericMethodTest
         fromArrayToCollection(sa, cs);
         fromArrayToCollection(sa, co);
 
-        Integer[] is = new Integer[100];
+        Integer[] ia = new Integer[100];
         Float[] fa = new Float[100];
         Number[] na = new Number[100];
 
         Collection<Number> cn = new ArrayList<>();
-        fromArrayToCollection(is, cn);
+        fromArrayToCollection(ia, cn);
+
+	fromArrayToCollection(fa, cn);
+
+	fromArrayToCollection(na, cn);
+	fromArrayToCollection(na, co);
+
+
 
     }
 }
