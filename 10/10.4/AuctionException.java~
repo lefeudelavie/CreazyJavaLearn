@@ -1,0 +1,9 @@
+public class AuctionException extends Exception
+{
+    public AuctionException() {};
+
+    public AcutionException(String msg)
+    {
+        super(msg);
+    }
+}
