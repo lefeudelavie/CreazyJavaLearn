@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.datatransfer.*;
 
-public ImageSelection implements Transferable
+public class ImageSelection implements Transferable
 {
     private Image image;
 

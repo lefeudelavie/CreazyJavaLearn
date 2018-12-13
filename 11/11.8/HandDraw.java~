@@ -37,7 +37,7 @@ public class HandDraw
             {
                 foreColor = new Color(255, 0, 0);
             }
-            if (e.getActionCommand().equals("ÂÌÉ«"))
+            if (e.getActionCommand().equals("À¶É«"))
             {
                 foreColor = new Color(0, 0, 255);
             }
@@ -52,7 +52,7 @@ public class HandDraw
 
         drawArea.add(pop);
 
-        g.fillRect(0, 0, AREA_WIDTH, AREA_HEIGHT);
+        g.fillRect(1, 1, AREA_WIDTH, AREA_HEIGHT);
         drawArea.setPreferredSize(new Dimension(AREA_WIDTH, AREA_HEIGHT));
 
         drawArea.addMouseMotionListener(new MouseMotionAdapter()
