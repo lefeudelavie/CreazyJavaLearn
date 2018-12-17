@@ -175,15 +175,15 @@ public class SwingComponent
                 break;
             case 3:
                 UIManager.setLookAndFeel(
-                "javax.swing.plaf.windows.WindowsLookAndFeel");
+                "com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
                 break;
             case 4:
                 UIManager.setLookAndFeel(
-                "javax.swing.plaf.windows.WindowsClassicLookAndFeel");
+                "com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel");
                 break;
             case 5:
                 UIManager.setLookAndFeel(
-                "javax.swing.plaf.motif.MotifLookAndFeel");
+                "com.sun.java.swing.plaf.motif.MotifLookAndFeel");
                 break;
         }
 
@@ -194,6 +194,7 @@ public class SwingComponent
 
     public static void main(String[] args)
     {
+        //JFrame.setDefaultLookAndFeelDecorated(true);
         new SwingComponent().init();
     }
 }
