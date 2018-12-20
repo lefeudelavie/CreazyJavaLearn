@@ -51,7 +51,7 @@ public class LoginFrame
     private boolean validate(String userName, String userPass)
     {
         String sql = "select * from jdbc_test"
-            + " where jdbc_name='" + userName
+            + "where jdbc_name='" + userName
             + "' and jdbc_desc='" + userPass + "'";
         System.out.println("sql:" + sql);
         try (
