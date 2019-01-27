@@ -50,6 +50,7 @@ public class LoginFrame
 
     private boolean validate(String userName, String userPass)
     {
+        /* 下面的写法会被SQL注入
         String sql = "select * from jdbc_test"
             + " where jdbc_name='" + userName
             + "' and jdbc_desc='" + userPass + "'";
@@ -72,6 +73,34 @@ public class LoginFrame
         }
 
         return false;
+        */
+
+
+        //用PreparedStatement来执行验证，可以防止被SQL注入
+        try(
+            Connection conn = DriverManager.getConnection(url, username, password);
+            PreparedStatement pstmt = conn.prepareStatement(
+                "select * from jdbc_test where jdbc_name = ? and jdbc_desc= ?")
+        )
+        {
+            pstmt.setString(1, userName);
+            pstmt.setString(2, userPass);
+            try(
+                 ResultSet rs = pstmt.executeQuery();
+            )
+            {
+                if (rs.next())
+                {
+                    return true;
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return false;
+
     }
 
     public static void main(String[] args) throws Exception

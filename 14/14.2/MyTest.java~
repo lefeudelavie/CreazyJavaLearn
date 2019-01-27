@@ -1,0 +1,11 @@
+public class MyTest
+{
+    @Testable
+    public void info()
+    {
+        public static void main(String[] args)
+        {
+            System.out.println("info·½·¨...");
+        }
+    }
+}

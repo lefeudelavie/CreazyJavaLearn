@@ -1,0 +1,19 @@
+//import java.lang.reflect.*;
+
+@FkTag(age=5)
+@FkTag(name="ÖØ¸´×¢½â²âÊÔ", age=9)
+public class FkTagTest
+{
+    public static void main(String[] args)
+    {
+        Class<FkTagTest> clazz = FkTagTest.class;
+        FkTag[] tags = clazz.getDeclaredAnnotationsByType(FkTag.class);
+        for (FkTag tag: tags)
+        {
+            System.out.println(tag.name() + "--->" + tag.age());
+        }
+
+        FkTags container = clazz.getDeclaredAnnotation(FkTags.class);
+        System.out.println(container);
+    }
+}

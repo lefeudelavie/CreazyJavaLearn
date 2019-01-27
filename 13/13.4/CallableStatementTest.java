@@ -11,17 +11,17 @@ public class CallableStatementTest
 
     public void initParam(String paramFile) throws Exception
     {
-	Properties props = new Properties();
-	props.load(new FileInputStream(paramFile));
-	dirver = props.getProperty("driver");
-	url = props.getProperty("url");
-	user = props.getProperty("user");
-	pass = props.getProperty("pass");
+        Properties props = new Properties();
+        props.load(new FileInputStream(paramFile));
+        driver = props.getProperty("driver");
+        url = props.getProperty("url");
+        user = props.getProperty("username");
+        pass = props.getProperty("password");
     }
 
     public void callProcedure() throws Exception
     {
-	Calss.forName(driver);
+	Class.forName(driver);
 	try(
 	    Connection conn = DriverManager.getConnection(url,
 		user, pass);
@@ -37,10 +37,10 @@ public class CallableStatementTest
 	   }
     }
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
     {
-	CallableStatementTest ct = new CallableStatement();
-	ct.initParam("mysql.ini");
-	ct.callProcedure();
+        CallableStatementTest ct = new CallableStatementTest();
+        ct.initParam("mysql.ini");
+        ct.callProcedure();
     }
 }
