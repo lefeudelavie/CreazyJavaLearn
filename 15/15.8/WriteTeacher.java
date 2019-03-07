@@ -13,8 +13,8 @@ public class WriteTeacher
 			Teacher t2 = new Teacher("唐僧", per);
 
 			oos.writeObject(t1);
-			oos.wirteObject(t2);
-			oos.wirteObject(per);
+			oos.writeObject(t2);
+			oos.writeObject(per);
 			oos.writeObject(t2);
 		}
 		catch (IOException ex)

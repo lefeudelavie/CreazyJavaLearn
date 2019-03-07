@@ -12,4 +12,3 @@ public class FinalErrorTest
 		new FinalErrorTest();
 	}
 }
-
