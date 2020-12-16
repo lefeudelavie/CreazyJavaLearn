@@ -1,7 +1,0 @@
-public class A2
-{
-    public String getInfo()
-    {
-	 return super.getInfo().toString();
-    }
-}

@@ -1,9 +1,0 @@
-import java.lang.annotation.*;
-
-@Retention(RetentionPloicy.RUNTIME)
-@Target(ElementType.METHOD)
-@Documented
-public @interface Testable
-{
-
-}
