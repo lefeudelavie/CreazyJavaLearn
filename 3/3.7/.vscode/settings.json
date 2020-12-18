@@ -1,0 +1,9 @@
+{
+    "java.home": "D:\\Program Files\\openjdk-11+28_windows-x64_bin\\jdk-11",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+}
