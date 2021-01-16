@@ -1,0 +1,24 @@
+import java.io.*;
+
+public class ReplaceTest
+{
+    public static void main(String[] args)
+    {
+	try(
+	    ObjectOutputStream oos = new ObjectOutputStream(
+		new FileOutputStream("replace.txt"));
+	    ObjectInputStream  ois = new ObjectInputStream(
+		new FileInputStream("replace.txt")))
+	{
+	    Person per = new Person("宙斯", 500);
+	    oos.writeObject(per);
+
+	    ArrayList list = (ArrayList)ois.readObject();
+	    System.out.println(list);
+	}
+	catch (Exception ex)
+	{
+	    ex.printStackTrace();
+	}
+    }
+}

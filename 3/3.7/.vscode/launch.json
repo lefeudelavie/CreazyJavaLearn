@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TernaryOperatorTest",
+            "request": "launch",
+            "mainClass": "TernaryOperatorTest",
+            "projectName": "3.7_d6be34f5"
+        },
+        {
+            "type": "java",
+            "name": "Launch LogicOperatorTest",
+            "request": "launch",
+            "mainClass": "LogicOperatorTest",
+            "projectName": "3.7_d6be34f5"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
