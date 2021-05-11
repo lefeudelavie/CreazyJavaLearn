@@ -17,17 +17,17 @@ public class IfCorrectTest2
 		int age = 45;
 		if (age > 60)
 		{
-			System.out.println("老年人");
+			System.out.println("老年人\n");
 		}
 		// 在原本的if条件中增加了else的隐含条件
 		if (age > 40 && !(age >60))
 		{
-			System.out.println("中年人");
+			System.out.println("中年人\n");
 		}
 		// 在原本的if条件中增加了else的隐含条件
 		if (age > 20 && !(age > 60) && !(age > 40 && !(age >60)))
 		{
-			System.out.println("青年人");
+			System.out.println("青年人\n");
 		}
 	}
 }

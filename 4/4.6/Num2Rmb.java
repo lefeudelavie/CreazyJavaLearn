@@ -66,6 +66,6 @@ public class Num2Rmb
 		// 测试把一个浮点数分解成整数部分和小数部分
 		System.out.println(Arrays.toString(nr.divide(236711125.123)));
 		// 测试把一个四位的数字字符串变成汉字字符串
-		System.out.println(nr.toHanStr("609"));
+		System.out.println(nr.toHanStr("6091"));
     }
 }
